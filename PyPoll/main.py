@@ -46,6 +46,20 @@ with open(csvpath,'r')as csvfile: #reads desired csv file
 file = open('pythonhw.txt','w')
 
 
+print("Election Results")
+print("-------------------------")
+print("Total Votes: " + str(totalvotes) + )
+print("-------------------------")
+print("Khan: " + str(khanpercent) + "%" + "(" + str(khantotal) + ")")
+print("Correy: " + str(correypercent) + "%" + "(" + str(correytotal) + ")")
+print("Li: " + str(lipercent) + "%" + "(" + str(litotal) + ")")
+print("O'tooley: " + str(otooleypercent) + "%" + "(" + str(otooleytotal) + ")")
+print("-------------------------")
+print("Winner: " + str(winner) + "")
+print("-------------------------")
+
+
+
 file.write("Election Results\n")
 file.write("-------------------------\n")
 file.write("Total Votes: " + str(totalvotes) + "\n")
@@ -57,4 +71,3 @@ file.write("O'tooley: " + str(otooleypercent) + "%" + "(" + str(otooleytotal) + 
 file.write("-------------------------\n")
 file.write("Winner: " + str(winner) + "!\n")
 file.write("-------------------------\n")
-
